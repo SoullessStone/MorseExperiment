@@ -73,14 +73,6 @@ public class SignalProvider {
         return signal;
     }
 
-    private static int[] getSignalWordPause() {
-        int[] signal = new int[8479];
-        for (int i = 8400; i < signal.length; i++) {
-            signal[i] = SCHWELLE_MIN + (int) (Math.random() * ((SCHWELLE_MAX - SCHWELLE_MIN) + 1));
-        }
-        return signal;
-    }
-
     private static void initFrame() {
         JFrame jFrame = new JFrame();
         jFrame.setVisible(true);
